@@ -16,13 +16,58 @@
                 console.log('response from server')
                 $.each(result, function(i, record){                   
                   console.log(record);
-                  document.getElementById("show").innerHTML += record.content;                
+                  let ab=record.content;
+                  console.log(ab.slice(0,20));
+                  var c=ab.slice(0,20);
+                  let div1 = document.createElement('div');
+                  let anchor = document.createElement('a');
+                  let para= document.createElement('p');
+                  div1.id="newdata";
+                  para.innerHTML = c;
+                  var ids = record.id;
+                 anchor.href="#";
+                 anchor.id="readme";
+                 anchor.innerText="Read More....";
+                  
+                 div1.append(para);
+                 div1.append(anchor);
+                 
+                 console.log(anchor);
+                 console.log(div1);
+                 
+                 document.getElementById("show").append(div1);  
+                 anchor.onclick= function getSpecificContent()
+                 {
+        
+                  console.log(ids);
+                  console.log('http://localhost:3333/blogdata/'+ids);
+                    $.getJSON('http://localhost:3333/blogdata/'+ids,(data)=>{
+                  console.log(data.content);
+                  $("#show").hide();
+                      // document.getElementById('readMore').innerHTML=data.content;
+                      $("#readMore").html(data.content);
+                      // document.getElementById(SpecificContent).innerText = data.content;
+                
+
+                    });
+                    // console.log(data);
+                    // // console.log(specificContent);
+                    // array.forEach(element => {
+                      
+                    // });
+                   
+                    
+  
+                  } 
+
+
                 })                
             }
-        })
+        });
+        
         $("#cate").click(function(){
 
-
+          
 
 
           for(var i = 0; i < a.length; i++) {
