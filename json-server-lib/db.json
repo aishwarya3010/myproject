@@ -1,0 +1,45 @@
+{
+  "blogdata": [
+    {
+      "id": 1,
+      "content": "fgggggggggggggggggggggggggggggggggggx",
+      "category": "java"
+    },
+    {
+      "id": 2,
+      "content": "fvvvvvvvvvvvvvvvvgggggggggggggggggggggggggggggggggggx",
+      "category": "java"
+    },
+    {
+      "id": 3,
+      "content": "ggggggggggggggggggggfvvvvvvvvvvvvvvvvgggggggggggggggggggggggggggggggggggx",
+      "category": "j"
+    },
+    {
+      "id": 4,
+      "content": "ssssssssssssssssssssggggggggggggggggggggfvvvvvvvvvvvvvvvvgggggggggggggggggggggggggggggggggggx",
+      "category": "j",
+      "emailid": "aish@gmail.com"
+    },
+    {
+      "content": "<div>Hii aishwarya</div>",
+      "title": "Aishwarya",
+      "id": 5
+    },
+    {
+      "content": "<div>aishwraujd</div>",
+      "title": "hiii",
+      "id": 6
+    },
+    {
+      "content": "<div><b>sddd</b></div>",
+      "title": "aaa",
+      "id": 7
+    },
+    {
+      "content": "<div><font color=\"#ff0000\">etegfdhfgj</font></div>",
+      "title": "",
+      "id": 8
+    }
+  ]
+}
